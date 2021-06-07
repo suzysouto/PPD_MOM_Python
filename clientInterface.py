@@ -42,17 +42,17 @@ class InterfaceUser:
         str_out.set("Sensor escolhido: ")
         self.str_out = str_out
 
-        l2 = Label(app, textvariable=str_out, width=30)
-        l2.pack()                 
+        l2 = Label(app, textvariable=str_out, width=20, fg="blue", font=('Helvetica', 15))
+        l2.pack(pady=15)                 
 
         app2 = Frame(app, width=700, height=200)
         self.app2 = app2
-        l3 = Label(app2, text="Medição", width=15)
-        l3.pack(side=LEFT, fill=BOTH) 
+        l3 = Label(app2, text="Medição", width=15, fg="blue", font=('Helvetica', 15))
+        l3.pack(side=LEFT, fill=BOTH, pady=15) 
 
         app3 = Frame(app, width=700, height=200)
         self.app3 = app3
-        l4 = Label(app3, text="-", width=15)
+        l4 = Label(app3, text="-", width=50, fg="blue", font=('Helvetica', 15))
         l4.pack(side=LEFT, fill=BOTH) 
         self.l4 = l4
         app3.pack()  
